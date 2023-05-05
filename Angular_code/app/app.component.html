@@ -1,0 +1,172 @@
+<div class="grid-container">
+  <div class="grid-item">
+    <div class="upper-data">
+      <div class="weather-data">
+        <div class="location">{{ cityname }}, {{ region }}, {{country}}</div>
+        
+      </div>
+    </div>
+    <div class="lower-data">
+      
+      <div class="more-info-container">
+
+        <div class="info-block">
+          <div class="info-block-value">Temperature:{{ currentTemperature }}°C</div>
+        </div>
+    
+        <div class="info-block">
+          <div class="info-block-value">Last Updated:{{ lastUpdated }}</div>
+        </div>
+        <div class="info-block">
+          <div class="info-block-value">Humidity:{{ humidityLevel }}%</div>
+        </div>
+        <div class="info-block">
+          <div class="info-block-value">Wind:{{ windSpeed }} km/h</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  
+
+  
+  <div class="grid-item">
+    <div class="upper-data">
+      <div class="weather-data">
+        <div class="location">{{ cityname2 }}, {{ region2 }},  {{country2 }}</div>
+      </div>
+    </div>
+    <div class="lower-data">
+        <div class="info-block">
+          <div class="info-block-label"><span></span></div>
+          <div class="info-block-value">Temperature:{{ currentTemperature2 }}°C</div>
+        </div>
+        <div class="info-block">
+          <div class="info-block-label"><span></span></div>
+          <div class="info-block-value">Last Updated:{{ lastUpdated2 }}</div>
+        </div>
+        <div class="info-block">
+          <div class="info-block-label"><span></span></div>
+          <div class="info-block-value">Humidity:{{ humidityLevel2 }}%</div>
+        </div>
+        <div class="info-block">
+          <div class="info-block-label"><span></span></div>
+          <div class="info-block-value">Wind:{{ windSpeed2 }} km/h</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <div class="upper-data">
+        <div class="weather-data">
+          <div class="location">{{ cityname3 }}, {{ region3 }}, {{ country3 }}</div>
+        </div>
+      </div>
+      <div class="lower-data">
+        <div class="more-info-container">
+          <div class="info-block">
+            <div class="info-block-label"><span></span></div>
+            <div class="info-block-value">Temperature:{{ currentTemperature3 }}°C</div>
+          </div>
+          <div class="info-block">
+            <div class="info-block-label"><span></span></div>
+            <div class="info-block-value">Last Updated:{{ lastUpdated3 }}</div>
+          </div>
+          <div class="info-block">
+            <div class="info-block-label"><span></span></div>
+            <div class="info-block-value">Humidity:{{ humidityLevel3 }}%</div>
+          </div>
+          <div class="info-block">
+            <div class="info-block-label"><span></span></div>
+            <div class="info-block-value">Wind:{{ windSpeed3 }} km/h</div>
+          </div>
+        </div>
+        </div>
+      </div>
+   
+
+
+
+
+
+      <div class="previous-data-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Date/Time</th>
+              <th>Temperature</th>
+              <th>Humidity</th>
+              <th>Wind Speed</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let weather of weatherData_ahd; let i = index" [class.alt-row]="i % 2 !== 0" >
+              <td>{{ weather.last_updated }}</td>
+              <td>{{ weather.temperature }}°C</td>
+              <td>{{ weather.humidity }}%</td>
+              <td>{{ weather.wind_kph }} km/h</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+
+
+      <div class="previous-data-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Date/Time</th>
+              <th>Temperature</th>
+              <th>Humidity</th>
+              <th>Wind Speed</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let weather of weatherData_sur; let i = index" [class.alt-row]="i % 2 !== 0" >
+              <td>{{ weather.last_updated }}</td>
+              <td>{{ weather.temperature }}°C</td>
+              <td>{{ weather.humidity }}%</td>
+              <td>{{ weather.wind_kph }} km/h</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+      <div class="previous-data-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Date/Time</th>
+              <th>Temperature</th>
+              <th>Humidity</th>
+              <th>Wind Speed</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let weather of weatherData_dwa; let i = index" [class.alt-row]="i % 2 !== 0" >
+              <td>{{ weather.last_updated }}</td>
+              <td>{{ weather.temperature }}°C</td>
+              <td>{{ weather.humidity }}%</td>
+              <td>{{ weather.wind_kph }} km/h</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      
+
+
+
+
+
+
+
+
+
+
+

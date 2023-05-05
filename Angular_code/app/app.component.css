@@ -1,0 +1,49 @@
+.grid-container {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .grid-item {
+    border: 2px solid #333;
+    height: 30vh;
+    width: 25vw;
+    margin: 20px;
+    background-color: rgba(255,255,255,0.8);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .grid-item:hover {
+    background-color: rgba(0,0,0,0.8);
+    cursor: pointer;
+    color : white;
+  }
+  
+  .location {
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 2px 2px 5px #333;
+    /* color: #fff; */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table, td, th {
+    border: 1px solid #333;
+    padding: 10px;
+    color: #fff;
+  }
+  
+  th {
+    background-color: #333;
+    color: #fff;
+
+  }
+  
